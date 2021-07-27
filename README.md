@@ -1,5 +1,5 @@
 # Website 🌐
-Development and redesign of [foursquarejebako.org](http://foursquarejebako.org)
+Development and redesign of [foursquarejebako.org.ng](http://foursquarejebako.org)
 
 # Theme
 ## Font
