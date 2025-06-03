@@ -1,0 +1,130 @@
+#services-section {
+	width: 100%;
+	height: 450px;
+	margin: 0;
+	padding: 50px 0;
+	text-align: center;
+	color: white;
+		/* parallax scrolling
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+*/
+	h1 {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-size: 3.2rem;
+		letter-spacing: 1.2px;
+		color: #F1CA41;
+	}
+}
+
+#services-section .swiper-container {
+	width: 100%;
+	height: 300px;
+	//background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+
+	.swiper-wrapper {}
+
+	.swiper-slide {
+		text-align: center;
+		background: rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1);
+		backdrop-filter: blur( 10.5px );
+		-webkit-backdrop-filter: blur( 10.5px );
+		width: 85%;
+		height: 100%;
+		border-radius: 20px;
+		color: #2D2F3D;
+
+		/* Center slide text vertically */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.swier-button-prev {
+		width: 25px !important;
+		height: 25px !important;
+	}
+
+	.swier-button-next {
+		width: 20px !important;
+		height: 20px !important;
+	}
+
+	.service-board {
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+		border-radius: 20px;
+		color: white;
+
+		.content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+			overflow: auto;
+			font-family: "Poppins", sans-serif;
+			font-weight: 500;
+			font-size: 1.5rem;
+
+			.title {
+				font-weight: 700;
+				font-size: 1.85rem;
+				margin-bottom: 10px;
+			}
+
+			#sermons-btn {
+				display: block;
+				padding: 7px 20px;
+				border: 2px solid white;
+				border-radius: 20px;
+				margin-top: 10px;
+				color: white;
+			}
+
+			.day {
+				background: #F1CA41;
+				padding: 7px 13px;
+				border-radius: 20px;
+				color: #2D2F3D;
+				margin-bottom: 5px;
+				.fas {
+					padding-right: 7px;
+				}
+			}
+
+			.time {
+				background: #F1CA41;
+				padding: 7px 13px;
+				border-radius: 20px;
+				color: #2D2F3D;
+				.fas {
+					padding-right: 7px;
+				}
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}
+

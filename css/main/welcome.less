@@ -1,0 +1,51 @@
+@desktop: ~"screen and (min-width: 768px)";
+
+#welcome {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 20px 50px 20px;
+	margin-top: 0px;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.5rem;
+	background: white;
+	@media @desktop {
+		flex-direction: row;
+		padding: 70px;
+	}
+	
+	
+	#profile-bloc {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		
+		@media @desktop {
+			width: 100%;
+		}
+	}
+	
+	#profile {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	
+	.content {
+		margin-top: 40px;
+		@media @desktop {
+			width: 400px;
+			margin-left: 30px;
+		}
+	}
+	
+	#signature {
+		display: none;
+		margin-top: 30px;
+		background: white;
+		color: black;
+	}
+}

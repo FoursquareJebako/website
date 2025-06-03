@@ -1,0 +1,115 @@
+//@import "./header.less";
+//@import "./footer.less";h
+
+.section-default() {
+	padding: 15px;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.55rem;
+	
+	h1 {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-size: 3rem;
+		margin-top: 20px;
+		color: #333333;
+	}
+	
+	p {
+		margin-top: 15px;
+	}
+}
+
+.btn-default() {
+	display: block;
+	width: 80%;
+	max-width: 300px;
+	height: 40px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background: #0066b2;
+	color: #2D2F3D;
+	
+	a {
+		color: inherit;
+		text-orientation: none;
+		&:hover {
+			color: red;
+			text-decoration: none;
+		}
+	}
+}
+
+
+
+#about {
+	margin-top: 50px; //fixed header hack
+	.section-default();
+}
+
+#leadership {
+	.section-default();
+	margin-top: 20px;
+}
+
+#contact {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 70px; //remove when done
+	padding: 70px 15px;
+	border-radius: 5px;
+	background: #f2f2f2;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.55rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	#envelope-icon {
+		font-size: 6rem;
+		color: #4d4d4d;
+	}
+	
+	h1 {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		font-size: 2.5rem;
+		margin-top: 5px;
+		color: #4d4d4d;
+	}
+	
+	#email-btn {
+		.btn-default();
+		color: white;
+		&:hover {
+			text-decoration: none;
+			background: darken(#0066b2, 10%);
+		}
+	}
+	
+	#contact-btn {
+		.btn-default();
+		margin-top: 10px;
+		background: #F1CA41;
+		
+		&:hover {
+			text-decoration: none;
+			background: darken(#F1CA41, 10%);
+		}
+	}
+	
+	
+	#footer {
+		
+	}
+	
+	@media screen and (min-width: 768px) {
+		padding: auto 40px;
+	}
+}

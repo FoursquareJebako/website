@@ -1,0 +1,459 @@
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px 50px 20px;
+  margin-top: 0px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5rem;
+  background: white;
+}
+@media screen and (min-width: 768px) {
+  #welcome {
+    flex-direction: row;
+    padding: 70px;
+  }
+}
+#welcome #profile-bloc {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  #welcome #profile-bloc {
+    width: 100%;
+  }
+}
+#welcome #profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#welcome .content {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  #welcome .content {
+    width: 400px;
+    margin-left: 30px;
+  }
+}
+#welcome #signature {
+  display: none;
+  margin-top: 30px;
+  background: white;
+  color: black;
+}
+#services-section {
+  width: 100%;
+  height: 450px;
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  /* parallax scrolling*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#services-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  letter-spacing: 1.2px;
+}
+#services-section h1 span {
+  color: #F1CA41;
+}
+#services-section .swiper-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#services-section .swiper-container .swiper-slide {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  width: 85%;
+  height: 100%;
+  border-radius: 20px;
+  color: #2D2F3D;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#services-section .swiper-container .swier-button-prev {
+  width: 25px !important;
+  height: 25px !important;
+}
+#services-section .swiper-container .swier-button-next {
+  width: 20px !important;
+  height: 20px !important;
+}
+#services-section .swiper-container .service-board {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: white;
+}
+#services-section .swiper-container .service-board .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#services-section .swiper-container .service-board .content .title {
+  font-weight: 700;
+  font-size: 1.85rem;
+  margin-bottom: 10px;
+}
+#services-section .swiper-container .service-board .content #sermons-btn {
+  display: block;
+  padding: 7px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: white;
+}
+#services-section .swiper-container .service-board .content .day {
+  background: #F1CA41;
+  padding: 7px 13px;
+  border-radius: 20px;
+  color: #2D2F3D;
+  margin-bottom: 5px;
+}
+#services-section .swiper-container .service-board .content .day .fas {
+  padding-right: 7px;
+}
+#services-section .swiper-container .service-board .content .time {
+  background: #F1CA41;
+  padding: 7px 13px;
+  border-radius: 20px;
+  color: #2D2F3D;
+}
+#services-section .swiper-container .service-board .content .time .fas {
+  padding-right: 7px;
+}
+#services-section .swiper-container .service-board .content p {
+  margin: 0;
+}
+#ministries-section {
+  width: 100%;
+  height: 450px;
+  margin: 0;
+  padding: 70px 0 70px 0;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.7rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ministries-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  margin-top: 20px;
+  color: #333333;
+}
+#ministries-section h3 {
+  padding: 0 15px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+#ministries-section .swiper-container {
+  width: 100%;
+  margin-top: 30px;
+}
+#ministries-section .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#ministries-section #teens {
+  background: url(../../images/teens.jpg);
+  background-size: cover;
+}
+#ministries-section #children {
+  background: url(../../images/children2.jpg) no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#ministries-section #youth {
+  background: url(../../images/youth.jpg) no-repeat center;
+  background-size: cover;
+}
+#ministries-section #adult {
+  background: url(../../images/fwi.jpg) no-repeat center;
+  background-size: cover;
+}
+#ministries-section .ministry-board {
+  width: 90%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 5px #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#ministries-section .ministry-board .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#ministries-section .ministry-board .content h1 {
+  color: white;
+}
+#ministries-section #swiper-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ministries-section #swiper-controls div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: white;
+  margin: 0 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 1px #e6e6e6;
+  font-size: 3.5rem;
+  color: #737373;
+}
+#ministries-section #swiper-controls div:hover {
+  -webkit-tap-highlight-color: white;
+  outline: none;
+}
+#header-bg {
+  width: 100%;
+  height: 600px;
+  background: url(../../images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: none;
+  /* Create the parallax scrolling effect
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; */
+}
+#header-bg #header-bg-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: opacity(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+#header-bg #header-bg-wrapper h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 3.5rem;
+}
+#header-bg #header-bg-wrapper p {
+  margin-top: 5px;
+  font-size: 1.6rem;
+}
+#header-bg #header-bg-wrapper #connect-btn {
+  margin-top: 15px;
+  text-decoration: none;
+  background: #F1CA41;
+  color: #2D2F3D;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  user-select: none;
+}
+#header-bg #header-bg-wrapper #connect-btn:hover {
+  background: #EF5350;
+  color: white;
+}
+#connect-section {
+  height: 600px;
+  padding: 10px 15px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #330033;
+  /*brown*/
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid #F1CA41;
+  border-bottom: 5px solid #F1CA41;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #connect-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#connect-section #top-icon {
+  position: relative;
+  font-size: 6.5rem;
+  color: #F1CA41;
+}
+#connect-section h1 {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  letter-spacing: 1.2px;
+  color: white;
+}
+#connect-section h3 {
+  margin-top: 5px;
+  border: 2px solid white;
+  padding: 9px 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#connect-section .text {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+#connect-section #btn-groups {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#connect-section .live {
+  width: 10px;
+  height: 10px;
+  background: #EF5350;
+  border: 1.5px solid #e60000;
+  margin-left: 10px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  45% {
+    border-width: 3px;
+  }
+  85% {
+    border-width: 1.5px;
+  }
+}
+#connect-section .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+  padding: 5px 10px;
+  background: #F1CA41;
+  width: 150px;
+  height: 38px;
+  color: #1a1a1a;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  align-self: center;
+  justify-self: center;
+}
+#connect-section .btn:nth-last-child(1):nth-child(odd) {
+  grid-column: 2 / span 2;
+}
+#connect-section .btn .fas,
+#connect-section .btn .fab {
+  padding-right: 7px;
+  font-size: 1.65rem;
+}
+#connect-section .btn:hover {
+  background: #EF5350;
+  color: white;
+  text-decoration: none;
+}
+#video-section {
+  position: relative;
+  height: 550px;
+  margin-top: 150px;
+  background: brown;
+  overflow: hidden;
+  /*display: flex;
+	flex-direction: column;*/
+}
+#video-section > video {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#video-section #content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#map {
+  padding: 70px 0;
+}
+#map #iframe-container {
+  width: 85%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+#map #iframe-container iframe {
+  width: 100%;
+  border-radius: 10px;
+}

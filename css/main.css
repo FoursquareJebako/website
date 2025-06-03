@@ -1,0 +1,626 @@
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0 50px;
+  padding: 50px 20px 50px 20px;
+  margin-top: 0px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  background: white;
+}
+
+@media screen and (min-width: 768px) {
+  #welcome {
+    flex-direction: row;
+    padding: 70px;
+  }
+}
+
+#welcome #profile-bloc {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #welcome #profile-bloc {
+    width: 100%;
+  }
+}
+
+#welcome #profile {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+#welcome h3 {
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  #welcome .content {
+    width: 400px;
+  }
+}
+
+#welcome #signature {
+  display: block;
+  font-style: italic;
+  margin-top: 30px;
+  background: white;
+  color: black;
+}
+
+#services-section {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+#services-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  letter-spacing: 1.2px;
+  color: #333;
+}
+
+#services-section .swiper-container {
+  width: 100%;
+  padding: 20px 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-section .swiper-container .swiper-slide {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  width: 85%;
+  height: 100%;
+  border-radius: 20px;
+  color: #2d2f3d;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#services-section .swiper-container .swier-button-prev {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+#services-section .swiper-container .swier-button-next {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.service-board {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.service-board::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity: 0.7;
+  border-radius: 20px;
+}
+
+#services-section .swiper-container .service-board .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#services-section .swiper-container .service-board .content .title {
+  font-weight: 700;
+  font-size: 1.85rem;
+  margin-bottom: 10px;
+}
+
+#sermons-btn {
+  display: block;
+  padding: 7px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+#sermons-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+}
+
+#services-section #sunday-service {
+  background: url(../images/sunday.jpg);
+  background-size: cover;
+}
+
+#services-section #bible-study {
+  background: url(../images/study.jpg);
+  background-size: cover;
+}
+
+#services-section #prayer-meeting {
+  background: url(../images/prayer.jpg);
+  background-size: cover;
+}
+
+#services-section #hour-of-mercy {
+  background: url(../images/mercy.jpg);
+  background-size: cover;
+}
+
+#services-section .swiper-container .service-board .content .day {
+  background: #f1ca41;
+  padding: 7px 13px;
+  border-radius: 20px;
+  color: #2d2f3d;
+  margin-bottom: 5px;
+}
+
+#services-section .swiper-container .service-board .content .day .fas {
+  padding-right: 7px;
+}
+
+#services-section .swiper-container .service-board .content .time {
+  background: #f1ca41;
+  padding: 7px 13px;
+  border-radius: 20px;
+  color: #2d2f3d;
+}
+
+#services-section .swiper-container .service-board .content .time .fas {
+  padding-right: 7px;
+}
+
+#services-section .swiper-container .service-board .content p {
+  margin: 0;
+}
+
+#ministries-section {
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.7rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ministries-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  margin-top: 20px;
+  color: #333333;
+}
+
+#ministries-section h3 {
+  padding: 0 15px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+#ministries-section .swiper-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#ministries-section .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#ministries-section #teens {
+  background: url(../images/teens.jpg);
+  background-size: cover;
+}
+
+#ministries-section #children {
+  background: url(../images/children2.jpg) no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ministries-section #youth {
+  background: url(../images/youth.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#ministries-section #adult {
+  background: url(../images/fwi.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#ministries-section .ministry-board {
+  position: relative;
+  width: 90%;
+  height: 250px;
+  box-shadow: 0px 0px 5px 5px #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ministry-board::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4b, #2d2d2d);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+#ministries-section .ministry-board .content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#ministries-section .ministry-board .content h1 {
+  color: white;
+}
+
+.ministry-btn {
+  display: block;
+  padding: 6px 60px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.ministry-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+}
+
+#ministries-section #swiper-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ministries-section #swiper-controls div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: white;
+  margin: 0 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 1px #e6e6e6;
+  font-size: 3.5rem;
+  color: #737373;
+}
+#ministries-section #swiper-controls div:hover {
+  -webkit-tap-highlight-color: white;
+  outline: none;
+}
+
+#header-bg {
+  width: 100%;
+  height: 600px;
+  background: url(../images/main-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: none;
+  /* Create the parallax scrolling effect
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; */
+}
+
+#header-bg #header-bg-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: opacity(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header-bg #header-bg-wrapper h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 3.5rem;
+}
+
+#header-bg #header-bg-wrapper p {
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+#header-bg #header-bg-wrapper #connect-btn {
+  margin-top: 15px;
+  text-decoration: none;
+  background: #f1ca41;
+  color: #2d2f3d;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  user-select: none;
+}
+#header-bg #header-bg-wrapper #connect-btn:hover {
+  background: #ef5350;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #header-bg #header-bg-wrapper h1 {
+    letter-spacing: 3px;
+    font-size: 4rem;
+  }
+
+  #header-bg #header-bg-wrapper p {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+}
+
+#connect-section {
+  height: 500px;
+  padding: 10px 15px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #330033;
+  background: linear-gradient(to top right, #42275a 50%, #734b6d 100%);
+
+  /*brown*/
+  border-top: 5px solid #f1ca41;
+  border-bottom: 5px solid #f1ca41;
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #connect-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#connect-section #top-icon {
+  font-size: 6.5rem;
+  color: #f1ca41;
+}
+#connect-section h1 {
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+  letter-spacing: 1.2px;
+  color: white;
+}
+#connect-section h3 {
+  margin-top: 5px;
+  border: 2px solid white;
+  padding: 9px 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#connect-section .text {
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+#connect-section #btn-groups {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 340px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#connect-section .live {
+  width: 10px;
+  height: 10px;
+  background: #ef5350;
+  border: 1.5px solid #e60000;
+  margin-left: 10px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  45% {
+    border-width: 3px;
+  }
+  85% {
+    border-width: 1.5px;
+  }
+}
+#connect-section .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background: #f1ca41;
+  width: 150px;
+  height: 38px;
+  color: #1a1a1a;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  align-self: center;
+  justify-self: center;
+}
+#connect-section .btn:nth-last-child(1):nth-child(odd) {
+  grid-column: 2 / span 2;
+}
+#connect-section .btn .fas,
+#connect-section .btn .fab {
+  padding-right: 7px;
+  font-size: 1.65rem;
+}
+#connect-section .btn:hover {
+  background: #ef5350;
+  color: white;
+  text-decoration: none;
+}
+
+#video-section {
+  position: relative;
+  height: 550px;
+  margin-top: 40px;
+  background: brown;
+  overflow: hidden;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#video-section > video {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#video-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#video-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+#video-content p {
+  margin-top: 10px;
+}
+
+#video-btn {
+  margin-top: 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1ca41;
+  width: 170px;
+  height: 40px;
+  color: #1a1a1a;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  align-self: center;
+}
+
+#video-btn i {
+  padding-left: 10px;
+}
+
+#video-btn:hover {
+  background: #ef5350;
+  color: white;
+}
+
+#map {
+  padding: 70px 0;
+}
+#map #iframe-container {
+  width: 85%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+#map #iframe-container iframe {
+  width: 100%;
+  border-radius: 10px;
+}

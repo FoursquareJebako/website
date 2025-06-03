@@ -1,0 +1,66 @@
+#give-bg {
+	height: 500px;
+	background: rgb(64,0,63);
+	color: white;
+	font-family: "Noto Sans", sans-serif;
+	margin-top: 65px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#give-wrapper {
+	width: 80%;
+}
+
+#give-bg h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	letter-spacing: 3px;
+	font-size: 3.2rem;
+}
+
+#give-bg p {
+	font-family: "Poppins", sans-serif;
+	margin-top: 10px;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+section {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 1.6rem;
+}
+
+.content {
+	margin-top: 20px;
+	padding: 0 15px;
+}
+
+#h .catch {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#give-grp {
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+.give-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.give-box h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	lettr-spacing: 3px;
+	font-size: 1.8rem;
+}
+
