@@ -2,27 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
-  modules: ["nuxt-icon"],
+  modules: ["@nuxt/icon"],
   ssr: false,
-  nitro: {
-    static: true,
-    prerender: {
-      crawlLinks: true,
-    },
-  },
-  css: ["@/assets/css/main.less"],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        less: {
-          additionalData: `@import './assets/css/theme.less';`,
-        },
-      },
-    },
-  },
-  build: {
-    transpile: ["nuxt-icon"],
-  },
+
   app: {
     head: {
       meta: [
@@ -41,11 +23,6 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", title: "image/x-icon", href: "./favicon.ico" },
-        {
-          rel: "stylesheet",
-          href: "https://unpkg.com/modern-css-reset/dist/reset.min.css",
-        },
-        { rel: "stylesheet", href: "@/assets/css/reset.css" },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
           rel: "preconnect",
@@ -58,5 +35,26 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+
+  css: ["@/assets/css/main.less"],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        less: {
+          additionalData: `@import './assets/css/theme.less';`,
+        },
+      },
+    },
+  },
+
+  nitro: {
+    static: true,
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+  build: {
+    transpile: ["nuxt-icon"],
   },
 });
