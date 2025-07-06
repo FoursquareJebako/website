@@ -52,18 +52,34 @@
 <script setup>
 import { useWindowScroll } from "@vueuse/core";
 import { useIntervalFn } from "@vueuse/core";
+const props = defineProps(["type"]);
 const header = useTemplateRef("header");
 const menuMobile = useTemplateRef("menu-mobile");
 
-let { x, y } = useWindowScroll();
-
-const { pause, resume, isActive } = useIntervalFn(() => {
-  if (x.value === 0) {
-    header.value.classList.remove("top");
+onMounted(() => {
+  if (props.type === "transparent") {
+    header.value.style.background = "transparent";
+    header.value.style.color = "white";
   } else {
-    header.value.classList.add("top");
+    console.log(props.type);
+  }
+});
+
+let { x, y } = useWindowScroll();
+const { pause, resume, isActive } = useIntervalFn(() => {
+  if (header.value) {
+    if (y.value === 0) {
+      console.log("very top");
+      if (!menuMobile.value.classList.contains("open")) {
+        header.value.classList.remove("top");
+      }
+    } else {
+      header.value.classList.add("top");
+    }
   }
 }, 300);
+
+const makeTransparent = () => {};
 
 const handleMenu = () => {
   if (menuMobile.value.classList.contains("open")) {

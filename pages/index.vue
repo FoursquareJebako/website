@@ -1,5 +1,5 @@
 <template>
-  <Header></Header>
+  <Header type="transparent"></Header>
   <div id="header-bg">
     <div id="header-bg-wrapper">
       <h1>WELCOME</h1>
