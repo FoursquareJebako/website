@@ -79,8 +79,6 @@ const { pause, resume, isActive } = useIntervalFn(() => {
   }
 }, 300);
 
-const makeTransparent = () => {};
-
 const handleMenu = () => {
   if (menuMobile.value.classList.contains("open")) {
     menuMobile.value.classList.remove("open");

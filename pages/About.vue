@@ -1,5 +1,5 @@
 <template>
-    <Header type="transparent"></Header>
+  <Header type="transparent"></Header>
   <section id="welcome-hero" class="welcome-hero">
     <div id="hero-wrapper">
       <div class="header-text">
@@ -26,8 +26,12 @@
   /* position:relative; */
   background: url(../assets/img/welcome.webp) no-repeat;
   background-size: cover;
-  background-position: 0 50%;
+  background-position: 50% 50%;
   height: 99vh;
+
+  @media @desktop {
+    background-position: 0 50%;
+  }
 }
 
 #hero-wrapper {
