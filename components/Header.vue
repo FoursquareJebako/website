@@ -7,7 +7,7 @@
           src="@/assets/img/logo.png"
           alt="Foursquare Jebako Logo"
         />
-        <p class="header-name"><a href="/">Foursquare Jebako</a></p>
+        <p class="header-name"><NuxtLink to="/">Foursquare Jebako</NuxtLink></p>
       </div>
 
       <div id="menu-wrapper">
@@ -18,32 +18,32 @@
           @click="handleMenu"
         ></Icon>
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/audio">Listen</a></li>
-          <li><a href="/video">Watch</a></li>
+          <li><NuxtLink to="/about">About</NuxtLink></li>
+          <li><NuxtLink to="/audio">Listen</NuxtLink></li>
+          <li><NuxtLink to="/video">Watch</NuxtLink></li>
           <li>
             <a
               href="https://drive.google.com/drive/folders/1KA8ec6mJNPZoTkPCVOjtbBDd6ECVk8IC?usp=sharing"
               >Gallery</a
             >
           </li>
-          <li><a href="/give">Give</a></li>
+          <li><NuxtLink to="/give">Give</NuxtLink></li>
         </ul>
       </div>
     </div>
 
     <div id="menu-mobile" class="" ref="menu-mobile">
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/audio">Listen live</a><span class="live"></span></li>
-        <li><a href="/video">Watch live</a><span class="live"></span></li>
+        <li><NuxtLink to="/about">About</NuxtLink></li>
+        <li><NuxtLink to="/audio">Listen live</NuxtLink><span class="live"></span></li>
+        <li><NuxtLink to="/video">Watch live</NuxtLink><span class="live"></span></li>
         <li>
           <a
             href="https://drive.google.com/drive/folders/1KA8ec6mJNPZoTkPCVOjtbBDd6ECVk8IC?usp=sharing"
             >Gallery</a
           >
         </li>
-        <li><a href="/give">Give</a></li>
+        <li><NuxtLink to="/give">Give</NuxtLink></li>
       </ul>
     </div>
   </header>

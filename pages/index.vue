@@ -7,9 +7,9 @@
         We are the city on the Hill.<br />
         A place where JESUS is glorified and God's love abounds
       </p>
-      <a href="media.html" id="connect-btn"
+      <NuxtLink to="/media" id="connect-btn"
         >CONNECT LIVE <Icon name="solar:soundwave-outline" size="25px"></Icon
-      ></a>
+      ></NuxtLink>
       <!-- fluent:sound-wave-circle-32-filled -->
     </div>
   </div>
@@ -36,7 +36,9 @@
   <Footer></Footer>
 </template>
 
-<script setup></script>
+<script setup>
+
+</script>
 
 <style scoped lang="less">
 #header-bg {

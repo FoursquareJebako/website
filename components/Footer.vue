@@ -9,36 +9,35 @@
       <div class="li-group">
         <h3>About</h3>
         <ul>
-          <li><a href="/about">About us</a></li>
-          <li><a href="#">The leadership</a></li>
+          <li><NuxtLink to="/about">About us</NuxtLink></li>
+          <li><NuxtLink to="#">The leadership</NuxtLink></li>
         </ul>
       </div>
 
       <div class="li-group">
         <h3>Media</h3>
         <ul>
-          <li><a href="/media">Listen live</a></li>
-          <li><a href="https://anchor.fm/foursquare-jebako">Sermons</a></li>
-          <li><a href="https://medium.com/@foursquarejeb">Blog</a></li>
-          <li><a href="/testimony">Testimony</a></li>
+          <li><NuxtLink to="/media">Listen live</NuxtLink></li>
+          <li><NuxtLink to="https://anchor.fm/foursquare-jebako">Sermons</NuxtLink></li>
+          <li><NuxtLink to="https://medium.com/@foursquarejeb">Blog</NuxtLink></li>
+          <li><NuxtLink to="#">Testimony</NuxtLink></li>
         </ul>
       </div>
 
       <div class="li-group">
         <h3>Give</h3>
         <ul>
-          <li><a href="/give">Tithes and Offering</a></li>
+          <li><NuxtLink to="/give">Tithes and Offering</NuxtLink></li>
         </ul>
       </div>
 
       <div class="li-group">
         <h3>Ministries</h3>
         <ul>
-          <li><a href="/home">House Fellowship</a></li>
-          <li><a href="/children">Children</a></li>
-          <li><a href="#">Teenagers</a></li>
-          <li><a href="#">Youth</a></li>
-          <li><a href="#">FWI/CFM</a></li>
+          <li><NuxtLink to="/children">Children</NuxtLink></li>
+          <li><NuxtLink to="https://www.tiktok.com/@the.tabernacle.of?lang=en">Teenagers</NuxtLink></li>
+          <li><NuxtLink to="#">Youth</NuxtLink></li>
+          <li><NuxtLink to="#">FWI/CFM</NuxtLink></li>
         </ul>
       </div>
     </section>
