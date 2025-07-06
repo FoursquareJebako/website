@@ -15,7 +15,7 @@
               Our Children's Ministry welcomes infants and young children into a
               joyful place grow in God's love.
             </p>
-            <a class="ministry-btn" href="children.html">CHILDREN</a>
+            <NuxtLink class="ministry-btn" to="/children">CHILDREN</NuxtLink>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
               This is where teenagers explore their faith, their
               identity and purpose in God's eyes.
             </p>
-            <a class="ministry-btn" href="">Teenagers</a>
+            <NuxtLink class="ministry-btn" to="https://www.tiktok.com/@the.tabernacle.of?lang=en">Teenagers</NuxtLink>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
               Our Youth Ministry empowers singles and young adults to grow
               spiritually, and positively impact their world.
             </p>
-            <a class="ministry-btn" href="youth.html">Youth</a>
+            <NuxtLink class="ministry-btn" to="youth.html">Youth</NuxtLink>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
               Ministries for women and men to deepen their
               faith, reach out to others, and serve with impact.
             </p>
-            <a class="ministry-btn" href="">FWI/CFM</a>
+            <NuxtLink class="ministry-btn" to="">FWI/CFM</NuxtLink>
           </div>
         </div>
       </div>
