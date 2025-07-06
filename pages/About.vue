@@ -1,5 +1,5 @@
 <template>
-    <Header></Header>
+    <Header type="transparent"></Header>
   <section id="welcome-hero" class="welcome-hero">
     <div id="hero-wrapper">
       <div class="header-text">

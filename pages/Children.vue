@@ -1,5 +1,5 @@
 <template>
-  <Header></Header>
+  <Header type="transparent"></Header>
   <section id="welcome">
     <div id="welcome-wrapper">
       <h1>THE CHILDREN MINISTRY</h1>
