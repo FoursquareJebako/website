@@ -2,8 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "@vueuse/nuxt"],
+  plugins: ["~/plugins/swiper-register.client.js"],
   ssr: false,
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag.includes("swiper"),
+    },
+  },
 
   app: {
     head: {
