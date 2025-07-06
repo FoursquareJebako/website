@@ -9,7 +9,7 @@
         infants
       </p>
       <div id="swipe-down">
-        <i class="fas fa-sort-down"></i>
+        <Icon name="fe:arrow-down" size="20px"></Icon>
       </div>
     </div>
   </section>
@@ -40,7 +40,7 @@
     </section>
   </div>
 
-  <section id="children-corner">
+  <!-- <section id="children-corner">
     <h1 class="head">BIBLE QUIZ</h1>
     <div id="icon-group">
       <i class="fas fa-gamepad"></i><span id="plus"> + </span
@@ -64,7 +64,7 @@
 
   <div id="play">
     <i class="fas fa-gamepad"></i>
-  </div>
+  </div> -->
   <Footer></Footer>
 </template>
 
@@ -73,9 +73,9 @@
 <style scoped lang="less">
 #welcome {
   width: 100%;
-  height: 600px;
+  height: 100vh;
   margin-top: 0px;
-  background: url(../images/children2.jpg);
+  background: url(../assets/img/children2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
   flex-direction: column;
@@ -135,10 +135,7 @@
   }
 }
 
-#swipe-down i {
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 3rem;
+#swipe-down .iconify {
   color: #2d2f3d;
 }
 
@@ -195,6 +192,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 70px;
 }
 
 .card {
