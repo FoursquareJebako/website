@@ -1,0 +1,6 @@
+# netlify.toml in Repo 1's root
+[[redirects]]
+  from = "/agmm/*"
+  to = "https://jebako-agmm.netlify.app/agmm/:splat"
+  status = 200
+  force = true # Optional
