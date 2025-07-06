@@ -1,20 +1,75 @@
-# Website 🌐
-Development and redesign of [foursquarejebako.org.ng](http://foursquarejebako.org.ng)
+# Nuxt Minimal Starter
 
-# Theme
-## Font
-- Poppins
-- Rubik
-- Noto Sans/Lato/Source Sans Pro
-```html
- <link rel="preconnect" href="https://fonts.gstatic.com">
- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Poppins:wght@400;500;700;800&family=Rubik&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Setup
+
+Make sure to install dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
-## Colors
-- Primary background (yellow): ```F1CA41 ```
-- Secondary background (Royal purple): ```330033 ```
-- Font color: ```1a1a1a ```
 
-# Components
-Check for all reusable components [here](https://github.com/FoursquareJebako/components)
+## Development Server
 
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
